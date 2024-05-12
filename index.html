@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>Portafolio</title>
+    <link rel="icon" href="img/codificacion.png">
+    <title>Portafolio Javier Zavala</title>
 </head>
 <body>
     <div class="all">
         <!-- Sección del Menú  -->
         <section class="menu">
             <header class="menu__header">
-                <img src="img\vector.png">
-                <h3 class="menu__title">Javier Zavala</h3>
+                <img src="img\vector_star.png">
+                <h3 class="menu__title">Javier Zavala Dev!</h3>
             </header>
             <nav>
                 <ul class="menu__list">
@@ -29,16 +30,18 @@
         <!-- Sección del Header/Title/Hero -->
         <section class="title">
             <div class="title__div">
-                <img class="title__profile" src="img\profile.jpg">
+                <div class="circle-container">
+                    <img class="title__profile" src="img\profile.jpg">
+                </div>
                 <div class="title__container">
                     <h2 class="title__bio">Hola, mi nombre es Javier Zavala y soy desarrollador web</h2>
                     <h3 class="title__subsection">Soy formado en LA UVEG (Universidad Virtual del Estado de Guanajuato) y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
                     <ul class="title__network">
                         <!-- Pon los enlaces de tus redes sociales favoritas -->
-                        <li class="title__network__item"><a href="https://github.com/javier1312">Github <img src="img\arrow.png"> </a></li>
-                        <li class="title__network__item"><a href="https://www.linkedin.com/in/javier-zavala-dev-js/">Linkedin <img src="img\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="https://www.instagram.com/javiier_zavala/">Instagram <img src="img\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="">Currículo <img src="img\arrow.png"></a></li>
+                        <li class="title__network__item"><a href="https://github.com/javier1312">Github <img src="img/arrow_white.png"> </a></li>
+                        <li class="title__network__item"><a href="https://www.linkedin.com/in/javier-zavala-dev-js/">Linkedin <img src="img/arrow_white.png"></a></li>
+                        <li class="title__network__item"><a href="https://www.instagram.com/javiier_zavala/">Instagram <img src="img/arrow_white.png"></a></li>
+                        <li class="title__network__item"><a href="">Currículo <img src="img/arrow_white.png"></a></li>
                     </ul>
                 </div>
             </div>
@@ -236,24 +239,24 @@
                     <h2 class="formcontato__title">Contacto</h2>
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
+                    <form class="formcontato__form" name="form" id="contactForm">
                         <div class="input-container">
-                            <input type="text" id="inputField" placeholder=" " required>
-                            <label for="inputField">Nombre</label>
+                            <input type="text" id="nombre" placeholder=" ">
+                            <label for="nombre">Nombre</label>
                         </div>
                         <div class="input-container">
-                            <input type="text" id="inputField" placeholder=" " required>
-                            <label for="inputField">E-mail</label>
+                            <input type="text" id="email" placeholder=" ">
+                            <label for="email">E-mail</label>
                         </div>
                         <div class="input-container">
-                            <input type="text" id="inputField" placeholder=" " required>
-                            <label for="inputField">Asunto</label>
+                            <input type="text" id="asunto" placeholder=" ">
+                            <label for="asunto">Asunto</label>
                         </div>
                         <div class="input-container">
-                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" id="inputField" required></textarea>
-                            <label for="inputField">Mensaje</label>
+                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" id="inputField" ></textarea>
+                            <label for="mensaje">Mensaje</label>
                         </div>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <button type="submit" class="formcontato__botao" id="enviar">Enviar mensaje</button>
                     </form>
                 </div>
             </div>
@@ -262,9 +265,11 @@
         <section class="footer">
             <div class="footer__rodape">
                 <p>Desarrollado por Javier Zavala</p>
-                <p>2022</p>
+                <p>2024</p>
             </div>
         </section>
     </div>
+<!-- Script del documento JavaScript -->
+<script src="app.js"></script>
 </body>
 </html>

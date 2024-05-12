@@ -390,7 +390,6 @@ section.experience{
     justify-content: space-between;
     border: solid #00c9d2 3px;
     margin-bottom: 64px;
-    padding: 32px;
 }
 .experiencie__box:last-child{
     margin-bottom: 32px;
@@ -802,6 +801,7 @@ section.academic{
 /*Experiencia Profesional*/
 section.experience{
     margin: 0;
+    padding: 32px;
 }
 
 .experience__section__title{
